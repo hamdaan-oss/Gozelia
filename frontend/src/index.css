@@ -1,0 +1,115 @@
+@import '@fontsource/lato/400.css'; 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+a.active hr{
+    display: block;
+}
+
+
+body{
+    background-image: url(./assets/Images/bg.jpg);
+    background-size: cover; 
+    color: white;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    
+}
+
+.custom-div {
+    margin: 5rem;
+    width: 65vw;
+    height: 50vh; 
+}
+
+/* Custom animations */
+@keyframes fadeLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes fadeRight {
+    0% {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .animate-fade-left {
+    animation: fadeLeft 2.5s ease-in-out forwards;
+  }
+  
+  .animate-fade-right {
+    animation: fadeRight 1.7s ease-in-out forwards;
+  }
+  
+  @keyframes fadeLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes fadeRight {
+    0% {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .animate-fade-left {
+    animation: fadeLeft 1s ease-in-out forwards;
+  }
+  
+  .animate-fade-right {
+    animation: fadeRight 1s ease-in-out forwards;
+  }
+  
+
+@media screen and (max-width: 768px) {
+    * {
+        font-size: 1rem; /* Set a base font size for mobile */
+    }
+    .custom-div {
+        margin: 2.5rem;
+        width: 90vw;  
+        height: 30vh; 
+    }
+    
+    /* Additional adjustments for navbar icons */
+    .navbar-icon {
+        width: 1.5rem; /* You can adjust icon sizes if needed */
+        height: 1.5rem;
+    }
+}
+
+/* Add this CSS to your styles */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
